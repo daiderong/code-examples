@@ -1,11 +1,8 @@
 ### code-demo
-    代码示例
+    代码示例集合
+    
 #### pay-demo
     策略模式实现的对接多支付平台伪代码
-
-#### fastvalidator-aop-demo
-    fastvalidator验证框架demo
-[fastvalidator-aop-demo链接](fastvalidator-aop-demo "fastvalidator-aop-demo")
     
 #### spring-aop-demo
     spring aop代码示例  
