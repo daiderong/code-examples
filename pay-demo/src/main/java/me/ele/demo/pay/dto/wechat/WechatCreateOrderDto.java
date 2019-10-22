@@ -1,4 +1,4 @@
-package me.ele.demo.pay.dto.union;
+package me.ele.demo.pay.dto.wechat;
 
 
 import lombok.Builder;
@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
  */
 @Builder
 @Data
-public class UnionPayCreateOrderDto implements BaseCreateOrderDto {
+public class WechatCreateOrderDto implements BaseCreateOrderDto {
 
     @NotNull
     private String orderNo;

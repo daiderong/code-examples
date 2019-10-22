@@ -6,10 +6,10 @@ import me.ele.demo.pay.dto.alipay.AlipayCallbackDto;
 import me.ele.demo.pay.dto.alipay.AlipayCallbackResultDto;
 import me.ele.demo.pay.dto.alipay.AlipayCreateOrderDto;
 import me.ele.demo.pay.dto.alipay.AlipayCreateResultDto;
-import me.ele.demo.pay.dto.union.UnionPayCallbackDto;
-import me.ele.demo.pay.dto.union.UnionPayCallbackResultDto;
-import me.ele.demo.pay.dto.union.UnionPayCreateOrderDto;
-import me.ele.demo.pay.dto.union.UnionPayCreateResultDto;
+import me.ele.demo.pay.dto.wechat.WechatPayCallbackDto;
+import me.ele.demo.pay.dto.wechat.WechatCallbackResultDto;
+import me.ele.demo.pay.dto.wechat.WechatCreateOrderDto;
+import me.ele.demo.pay.dto.wechat.WechatPayCreateResultDto;
 import me.ele.demo.pay.BaseJunit;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,10 +32,10 @@ public class PayStrategySerivceImplTest extends BaseJunit {
 
     @Test
     public void unionpayOrderTest() throws Exception {
-        UnionPayCreateResultDto unionPayCreateResultDto = (UnionPayCreateResultDto) payStrategyService.createOrder(UnionPayCreateOrderDto.builder()
+        WechatPayCreateResultDto wechatPayCreateResultDto = (WechatPayCreateResultDto) payStrategyService.createOrder(WechatCreateOrderDto.builder()
                 .totalAmount(1281L)
                 .orderNo("3123123").build());
-        UnionPayCallbackResultDto unionPayCallbackResultDto = (UnionPayCallbackResultDto) payStrategyService.reciveCallback(UnionPayCallbackDto.builder().errorCode("0000")
+        WechatCallbackResultDto wechatCallbackResultDto = (WechatCallbackResultDto) payStrategyService.reciveCallback(WechatPayCallbackDto.builder().errorCode("0000")
                 .build());
 
     }

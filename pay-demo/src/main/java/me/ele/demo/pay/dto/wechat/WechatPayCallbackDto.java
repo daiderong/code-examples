@@ -1,4 +1,4 @@
-package me.ele.demo.pay.dto.union;
+package me.ele.demo.pay.dto.wechat;
 
 
 import lombok.Builder;
@@ -7,7 +7,7 @@ import me.ele.demo.pay.dto.BaseCallbackDto;
 
 @Builder
 @Data
-public class UnionPayCallbackDto implements BaseCallbackDto {
+public class WechatPayCallbackDto implements BaseCallbackDto {
 
     private String errorCode;
 

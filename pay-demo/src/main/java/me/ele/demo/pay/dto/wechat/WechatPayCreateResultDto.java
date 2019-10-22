@@ -1,4 +1,4 @@
-package me.ele.demo.pay.dto.union;
+package me.ele.demo.pay.dto.wechat;
 
 
 import lombok.Builder;
@@ -7,7 +7,7 @@ import me.ele.demo.pay.dto.BaseCreateOrderResultDto;
 
 @Data
 @Builder
-public class UnionPayCreateResultDto implements BaseCreateOrderResultDto {
+public class WechatPayCreateResultDto implements BaseCreateOrderResultDto {
 
     private String code;
 
