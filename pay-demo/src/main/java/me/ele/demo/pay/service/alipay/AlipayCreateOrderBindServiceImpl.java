@@ -1,7 +1,7 @@
 package me.ele.demo.pay.service.alipay;
 
 import lombok.extern.slf4j.Slf4j;
-import me.ele.demo.pay.BasePayService;
+import me.ele.demo.pay.BasePayBindService;
 import me.ele.demo.pay.dto.alipay.AlipayCreateResultDto;
 import me.ele.demo.pay.dto.alipay.AlipayCreateOrderDto;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class AlipayCreateOrderServiceImpl extends BasePayService<AlipayCreateOrderDto, AlipayCreateResultDto> {
+public class AlipayCreateOrderBindServiceImpl extends BasePayBindService<AlipayCreateOrderDto, AlipayCreateResultDto> {
 
     @Override
     public Class<AlipayCreateOrderDto> getBindParamClass() {

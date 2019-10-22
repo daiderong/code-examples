@@ -1,6 +1,6 @@
 package me.ele.demo.pay.service.wechat;
 
-import me.ele.demo.pay.BasePayService;
+import me.ele.demo.pay.BasePayBindService;
 import me.ele.demo.pay.dto.wechat.WechatPayCallbackDto;
 import me.ele.demo.pay.dto.wechat.WechatCallbackResultDto;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @author daiderong
  */
 @Service
-public class WechatPayCallbackServiceImpl extends BasePayService<WechatPayCallbackDto, WechatCallbackResultDto> {
+public class WechatPayCallbackBindServiceImpl extends BasePayBindService<WechatPayCallbackDto, WechatCallbackResultDto> {
 
     @Override
     public Class<WechatPayCallbackDto> getBindParamClass() {

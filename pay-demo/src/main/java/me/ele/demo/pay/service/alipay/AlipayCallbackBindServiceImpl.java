@@ -1,7 +1,7 @@
 package me.ele.demo.pay.service.alipay;
 
 import lombok.extern.slf4j.Slf4j;
-import me.ele.demo.pay.BasePayService;
+import me.ele.demo.pay.BasePayBindService;
 import me.ele.demo.pay.dto.alipay.AlipayCallbackDto;
 import me.ele.demo.pay.dto.alipay.AlipayCallbackResultDto;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-public class AlipayCallbackServiceImpl extends BasePayService<AlipayCallbackDto, AlipayCallbackResultDto> {
+public class AlipayCallbackBindServiceImpl extends BasePayBindService<AlipayCallbackDto, AlipayCallbackResultDto> {
 
     @Override
     public Class getBindParamClass() {

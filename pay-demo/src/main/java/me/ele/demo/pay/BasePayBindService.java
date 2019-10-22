@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
  * @param <R>
  * @author daiderong
  */
-public abstract class BasePayService<T extends BasePayDto, R extends BasePayDto> implements IPayService<T, R> {
+public abstract class BasePayBindService<T extends BasePayDto, R extends BasePayDto> implements IPayService<T, R> {
 
 
     @Autowired
