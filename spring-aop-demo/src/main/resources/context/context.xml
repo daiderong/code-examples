@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="me.ele.demo"/>
+    <!-- 使用jdk或是cglib代理方式 -->
+    <aop:aspectj-autoproxy ></aop:aspectj-autoproxy>
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>-->
+
+<!--    <bean id="validator" class="com.alibaba.fastvalidator.core.spring.FastValidatorFactoryBean" >-->
+<!--&lt;!&ndash;        //(可选)提前预热,保证第一次验证时的性能.格式:com.alibaba.package&ndash;&gt;-->
+<!--        <property name="validateBeanPackage" value="me.ele.demoo.service.impl" />-->
+<!--&lt;!&ndash;        // (可选, 默认true)是否是failfast验证模式.&ndash;&gt;-->
+<!--        <property name="failFast" value="true" />-->
+<!--&lt;!&ndash;        // (可选, 默认true)验证失败时是否输出(/home/admin/fastvalidator/fastvalidator_result.log)验证对象的JSON格式信息&ndash;&gt;-->
+<!--        <property name="logValidateDetail" value="true" />-->
+<!--    </bean>-->
+<!--    //如果验证方法参数失败, 拦截器默认会设置code和message给方法返回参数. 如果没有找到相应的方法，则抛出异常-->
+<!--    <bean id="fastMethodValidationInterceptor" class="com.alibaba.fastvalidator.core.spring.FastValidatorMethodInterceptor" >-->
+<!--        <property name="validator" ref="validator" />-->
+<!--    </bean>-->
+
+<!--    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" >-->
+<!--        <property name="beanNames">-->
+<!--            <list>-->
+<!--                &lt;!&ndash; 所有名称中service结尾 &ndash;&gt;-->
+<!--                <value>*Service</value>-->
+<!--                <value>*ServiceImpl</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="interceptorNames">-->
+<!--            <list>-->
+<!--                <value>fastMethodValidationInterceptor</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+
+
+</beans>
